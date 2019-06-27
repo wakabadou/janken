@@ -22,7 +22,7 @@ use App\Janken;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Value object: クエリ断片 テスト
+ * Jankenのテスト
  *
  * @runTestsInSeparateProcesses
  */
