@@ -1,0 +1,16 @@
+
+# any ENV
+.php-version
+
+# composer
+composer.lock
+
+# IDE ane editors
+## Eclipse
+.project
+.settings
+.buildpath
+
+# PHPunit
+.phpunit.result.cache
+/vendor/
