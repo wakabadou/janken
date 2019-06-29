@@ -57,15 +57,19 @@ class JankenTest extends TestCase
         $janken = Janken::setup();
 
         $this->assertSame(null, $janken->player());
+        $this->assertSame(null, $janken->computer());
 
         $this->assertInstanceOf(Janken::class, $janken->player(Janken::HAND_SIGN_CYOKI));
         $this->assertSame(Janken::HAND_SIGN_CYOKI, $janken->player());
+        $this->assertSame(null, $janken->computer());
 
         $this->assertInstanceOf(Janken::class, $janken->player(Janken::HAND_SIGN_GU));
         $this->assertSame(Janken::HAND_SIGN_GU, $janken->player());
+        $this->assertSame(null, $janken->computer());
 
         $this->assertInstanceOf(Janken::class, $janken->player(Janken::HAND_SIGN_PA));
         $this->assertSame(Janken::HAND_SIGN_PA, $janken->player());
+        $this->assertSame(null, $janken->computer());
 
         //==============================================
         // 例外のテスト
@@ -91,15 +95,19 @@ class JankenTest extends TestCase
         $janken = Janken::setup();
 
         $this->assertSame(null, $janken->computer());
+        $this->assertSame(null, $janken->player());
 
         $this->assertInstanceOf(Janken::class, $janken->computer(Janken::HAND_SIGN_CYOKI));
         $this->assertSame(Janken::HAND_SIGN_CYOKI, $janken->computer());
+        $this->assertSame(null, $janken->player());
 
         $this->assertInstanceOf(Janken::class, $janken->computer(Janken::HAND_SIGN_GU));
         $this->assertSame(Janken::HAND_SIGN_GU, $janken->computer());
+        $this->assertSame(null, $janken->player());
 
         $this->assertInstanceOf(Janken::class, $janken->computer(Janken::HAND_SIGN_PA));
         $this->assertSame(Janken::HAND_SIGN_PA, $janken->computer());
+        $this->assertSame(null, $janken->player());
 
         //==============================================
         // 例外のテスト

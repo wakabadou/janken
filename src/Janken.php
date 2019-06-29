@@ -46,7 +46,7 @@ class Janken
     // で、なにつくろー、なにつくろー
 
     /**
-     * @var array   じゃんけの手のマップ
+     * @var array   じゃんけんの手のマップ
      */
     public const HAND_SIGN_MAP  = [
         self::HAND_SIGN_GU      => self::HAND_SIGN_GU,

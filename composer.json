@@ -1,5 +1,5 @@
 {
-	"name" : "Janken/Janken",
+	"name" : "janken/janken",
 	"description" : "Janken",
 	"type" : "application",
 	"homepage" : "https://ickx.jp",
@@ -17,7 +17,6 @@
 	"config" : {
 		"autoloader-suffix" : "Janken"
 	},
-
 	"autoload" : {
 		"psr-4" : {
 			"App\\" : "src"
